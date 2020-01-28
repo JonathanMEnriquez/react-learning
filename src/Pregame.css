@@ -1,0 +1,30 @@
+.pregame {
+    padding: 10px 24px;
+    overflow: auto;
+}
+
+.header {
+    text-align: right;
+}
+
+.pregame-content {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+.pregame-content > h1,
+.pregame-content > h2 {
+    display: inline-block;
+}
+
+.pregame-content > h1 {
+    padding-right: 8px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}

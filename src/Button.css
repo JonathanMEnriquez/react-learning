@@ -1,0 +1,27 @@
+.encasing-button-div {
+    display: inline-block;
+}
+
+div > .button-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    padding: 2px;
+    margin-right: 8px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    display: inline;
+    background: white;
+}
+
+div > .button {
+    display: inline-block;
+    height: 28px;
+    cursor: pointer;
+    padding: 2px;
+    margin-right: 8px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    display: inline;
+    background: white;
+}
