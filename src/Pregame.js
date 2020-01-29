@@ -16,7 +16,7 @@ class Pregame extends Component {
                     <h1>WHERE I BE: </h1><h2>el Juego</h2>
                 </div>
                 <div className="button-div">
-                    <MainButton actionTitle="Start" clickHandler={game.setToLiveMode} />
+                    <MainButton actionTitle="Start" loading={!this.props.imgLoaded} clickHandler={game.setToLiveMode} />
                 </div>
             </div>
          );

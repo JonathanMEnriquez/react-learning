@@ -22,6 +22,7 @@ class GameProvider extends Component {
                     setToLiveMode: () => this.setState({gameMode: this.state.gameModes.LIVEGAME}),
                     setToPostgameMode: () => this.setState({gameMode: this.state.gameModes.POSTGAME}),
                     img: this.state.img,
+                    getNewImage: () => this.setState({img: this.getImageInfo()}),
                 }}
             >
                 {this.props.children}

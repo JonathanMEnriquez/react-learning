@@ -4,7 +4,7 @@ import './Button.css';
 class Button extends Component {
     state = {  }
     render() {
-        const { icon, clickHandler, src, alt } = this.props;
+        const { icon, clickHandler, src, alt, text } = this.props;
         return (
             <div className="encasing-div">
                 {icon &&
@@ -19,7 +19,7 @@ class Button extends Component {
                     <div
                         className="button"
                         onClick={clickHandler}
-                    />
+                    >{text}</div>
                 }
             </div>
         );

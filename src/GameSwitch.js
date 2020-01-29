@@ -6,15 +6,32 @@ import './GameSwitch.css';
 import Postgame from './Postgame';
 
 class GameSwitch extends Component {
+    state = {
+        imgLoaded: false
+    }
+
+    handleImgLoaded() {
+        this.setState({imgLoaded: true});
+    }
+
+    handleImgError() {
+        const game = this.context;
+        this.setState({imgLoaded: false});
+        game.getNewImage();
+    }
+
     render() {
         const game = this.context;
         return (
             <div className="main">
                 <img className={game.mode !== game.modes.PREGAME ? 'game-img' : 'hidden'}
-                    src={game.img.img_src} />
+                    src={game.img.img_src}
+                    alt='game img'
+                    onLoad={this.handleImgLoaded.bind(this)}
+                    onError={this.handleImgError.bind(this)} />
 
                 {game.mode === game.modes.PREGAME && 
-                    <Pregame />
+                    <Pregame imgLoaded={this.state.imgLoaded} />
                 }
                 {game.mode === game.modes.LIVEGAME &&
                     <LiveGame />

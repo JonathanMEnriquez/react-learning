@@ -6,6 +6,7 @@ class MainButton extends Component {
     render() { 
         return ( 
         <button
+            disabled={this.props.loading}
             className="main-button"
             onClick={this.props.clickHandler}>
             {this.props.actionTitle}

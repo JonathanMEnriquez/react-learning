@@ -6,9 +6,10 @@ class ButtonGroup extends Component {
     render() {
         const props = this.props;
         const elements = props.elements;
+        const className = props.centered ? 'centered' : 'btn-group';
 
         return ( 
-            <div className="btn-group"
+            <div className={className}
                 onMouseEnter={props.mouseEnter}
                 onMouseLeave={props.mouseLeave}>
                 {elements.map((el, i) => {
@@ -19,6 +20,7 @@ class ButtonGroup extends Component {
                         icon={props.icon} 
                         clickHandler={el.clickHandler}
                         alt={el.alt}
+                        text={el.text}
                     />)
                 })}
             </div>
