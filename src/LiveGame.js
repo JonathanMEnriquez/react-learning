@@ -29,6 +29,9 @@ class LiveGame extends Component {
             1200);
         this.setState({timeout: nTimeout});
     }
+    componentWillUnmount() {
+        this.setState({timeout: null});
+    }
     render() {
         const { setToPostgameMode } = this.context;
         const btnGroupEntries = [

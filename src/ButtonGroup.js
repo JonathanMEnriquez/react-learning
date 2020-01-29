@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
-import './Button.css';
+import './ButtonGroup.css';
 
 class ButtonGroup extends Component {
     render() {
