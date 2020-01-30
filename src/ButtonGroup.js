@@ -21,6 +21,7 @@ class ButtonGroup extends Component {
                         clickHandler={el.clickHandler}
                         alt={el.alt}
                         text={el.text}
+                        disabled={props.disabled}
                     />)
                 })}
             </div>

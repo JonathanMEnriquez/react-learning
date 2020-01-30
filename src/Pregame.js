@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import GameContext from './GameContext';
 import './Pregame.css';
 import MainButton from './MainButton';
+import Standings from './Standings';
 
 class Pregame extends Component {
-    state = {  }
     render() { 
         const game = this.context;
         return (
@@ -13,8 +13,9 @@ class Pregame extends Component {
                     <p>{this.getCurrentDate()}</p>
                 </div>
                 <div className="pregame-content">
-                    <h1>WHERE I BE: </h1><h2>el Juego</h2>
+                    <h1>BE IN THE SPOTLIGHT: </h1><h2>el Juego</h2>
                 </div>
+                <Standings />
                 <div className="button-div">
                     <MainButton actionTitle="Start" loading={!this.props.imgLoaded} clickHandler={game.setToLiveMode} />
                 </div>

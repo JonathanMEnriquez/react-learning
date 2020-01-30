@@ -1,0 +1,39 @@
+.standings {
+    display: inline-block;
+    width: 180px;
+    min-width: 160px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    position: relative;
+    left: 75%;
+    padding-bottom: 8px;
+}
+
+.standings > h3 {
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.s-contents {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.standings > .s-contents > .div {
+    display: inline-block;
+    margin: 0;
+    width: 50%;
+}
+
+.standings p {
+    margin: 0;
+    padding: 4px 0;
+}
+
+.standings p:first-child {
+    padding-top: 8px;
+}
